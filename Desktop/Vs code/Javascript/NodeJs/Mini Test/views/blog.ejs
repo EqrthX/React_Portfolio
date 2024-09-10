@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <%- include('layouts/head') %>
+    
+<body>
+
+   <%- include('layouts/nav') %> 
+
+   <main>
+
+        <h1 style="text-align: center;"><%= homepage %></h1>
+
+        <div class="container">
+
+            <form action="/getBlog" method="post">
+
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" name="email" placeholder="name@example.com">
+                </div>
+
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="exampleFormControlInput1" name="name" placeholder="...">
+                </div>
+    
+                <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Blog</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" name="blog" rows="3"></textarea>
+                </div>
+                
+                <button type="submit" class="btn btn-primary">submit</button>
+
+            </form>
+
+        </div>
+
+
+    </main>
+
+</body>
+</html>

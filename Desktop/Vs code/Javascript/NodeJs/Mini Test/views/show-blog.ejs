@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <%- include('layouts/head') %>
+
+<body>
+
+   <%- include('layouts/nav') %> 
+
+   <main>
+        <div class="container">
+            <h1 style="text-align: center;">Show Blog</h1>
+
+                <% blog.forEach(b => { %>
+                    
+                    <h5>ชื่อ: <%= b.name %></h5>
+
+                    <div class="mb-3">
+
+                        <hr>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" name="blog" rows="3"><%= b.blog %></textarea>
+
+                    </div>
+
+
+                <% })  %>
+                
+
+        </div>
+   </main>
+
+</body>
+</html>

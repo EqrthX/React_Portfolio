@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <%- include('layouts/head') %>
+
+<body>
+
+   <%- include('layouts/nav') %> 
+
+   <main>
+        <div class="container">
+            <h1 style="text-align: center;">Show Blogs</h1>
+
+            <ul>
+
+                <% blogs.forEach(blog => { %>
+                    <li>
+                        <a href="/show-blog?id=<%= encodeURIComponent(blog.id) %>">
+                            <strong>Blog:</strong> <%= blog.name %><br>
+                        </a>
+                        <strong>Timestamp:</strong> <%= blog.timestamp %>
+                    </li>
+                    <hr>
+                <% }); %>
+
+            </ul>
+
+        </div>
+   </main>
+
+</body>
+</html>
