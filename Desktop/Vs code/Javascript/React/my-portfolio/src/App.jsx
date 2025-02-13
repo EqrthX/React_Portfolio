@@ -12,7 +12,7 @@ function App() {
     initial={{opacity: 0}} 
     animate={{ opacity: 1}}
     transition={{duration: 2}}
-    className="max-w-screen min-h-[100vh] bg-[#DBEEF7] "
+    className="max-w-screen min-h-[100vh] bg-[#DBEEF7] overflow-x-hidden"
     >
 
       <Navbar/>

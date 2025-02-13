@@ -36,8 +36,8 @@ const Navbar = () => {
             {/* แสดงสำหรับมือถือ */}
 
             <div 
-            className={`absolute top-15 right-0 bg-[#BDD2E9] rounded-lg p-1 transition-transform duration-300 
-            ease-in-out ${isOpen ? "translate-x-0" : "translate-x-full"} sm:hidden block`}>
+            className={`absolute top-16 right-4 bg-[#BDD2E9] rounded-lg p-1 w-[200px] transition-all duration-300 
+            ease-in-out ${isOpen ? "right-4 opacity-100" : "right-[-100%] opacity-0"} sm:hidden block`}>
                 <ul className='font-medium text-lg uppercase tracking-wider flex flex-col items-center py-4'>
                     {["home", "skills", "project", "contact"].map((item, index) => (
                         <li
